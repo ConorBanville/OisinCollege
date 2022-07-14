@@ -1,0 +1,238 @@
+body {
+    font-size: 100%;
+    background: url(../assets/images/cocktailbar.jpeg) no-repeat center center;
+    background-color: rgb(38, 39, 41);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    line-height: 35px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/*-------------Navigation Bar---------*/
+.navicons {
+    color:rgb(255, 184, 4);
+ }
+ .navbar-list {
+     margin:0%;
+     padding: 0.5rem;
+     border-radius: 1rem;
+     background-color: rgba(33, 78, 99, 0.75);
+     display: flex;
+     list-style-type: none;
+     justify-content:space-around;
+     flex-direction:row;
+     font-size: 180%
+ }
+ .nav1 {
+    color:rgb(255, 184, 4);
+    text-decoration: none;
+    font-size: 80%;
+}
+.navbar-list a:hover {
+    color:rgb(255, 184, 4, 0.8);
+}
+/*-------------Banner Logo---------*/
+#banner {
+    background-color: rgba(33, 78, 99, 0.95);
+    border-radius: 70%;
+    margin-top: 2%;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 250%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.banner-items {
+    font-weight: 300;
+    color:rgb(255, 184, 4);
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Dancing Script', cursive; 
+}
+#store-bought {
+    margin-top: 0.025rem;
+    margin-bottom: 0.025rem;
+    white-space: nowrap;
+    font-size: 150%;
+    color:rgb(255, 184, 4);
+}
+/*-------------Index-----------*/
+.index-page-layout {
+    margin-top: .75rem;
+    padding: .5rem;
+    padding-bottom: 6rem;
+    background-color: slategray;
+}
+.landing-page-content {
+    max-width: 70vw;
+    background-color:rgba(230, 230, 250, 0.712);
+    color:rgba(33, 78, 99, 0.95) ;
+    font-family: 'Nanum Pen Script', cursive;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 5vw;
+    padding: 5%;
+    border-radius: 5%;
+}
+h1 {
+    padding-left: 5%;
+}
+.store-bought-landing {
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+#displayimage {
+    width: 400px;
+    height: 225px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+   }
+/*-------------Recipes---------*/
+.recipe-section {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    background-color:rgb(38, 39, 41);
+    margin-top: .75rem;
+}
+.recipes{
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3vh;
+    background: rgb(33, 78, 99);
+    color:lavender;
+    font-weight:200;
+    font-family: 'Nanum Pen Script', cursive;
+    padding: 3rem;
+    height:max-content;
+}
+.cocktail-images {
+    width: 80vw;
+    height: auto;
+    border-radius: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.recipelists {
+    width: auto;
+}
+/*-------------History---------*/
+.origin-definitions {
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: 200;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: .75rem;
+    padding-bottom: 5rem;
+    background:rgb(38, 39, 41, 1);
+    margin-top: .75rem;
+}
+#origin {
+    width: 90%;
+    padding: 1.25rem;
+    background:rgb(38, 39, 41, 1);
+    color:lavender;
+    margin-top: 20px;
+}
+#definition {
+    background-color: lavender;
+    color:rgb(38, 39, 41, 1);
+    width: 90%;
+    padding: 3rem; 
+    list-style-type: none;
+    margin: 1.25rem;
+}
+.adjective-verb {
+    font-style: italic;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------Footer---------*/
+.footer-step {
+    height: 5rem;
+}
+footer {
+    height: 5rem;
+    width: 100vw;
+    background-color:rgb(255, 184, 4, 0.9);
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-evenly;
+}
+.footer-icons {
+    padding-top: 18px;
+    font-size: 2rem;
+    color: rgba(114, 38, 73, 0.85);
+}
+.store-bought-footer {
+    white-space: nowrap;
+    font-size: 40px;
+    color:rgba(38, 89, 114, 0.75);
+    font-weight: 300;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+/*-------------medium size screen rules------*/
+@media screen and (min-width: 601px) {
+    #banner {
+        width:30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .origin-definitions {
+        display:flex;
+        flex-direction: row;
+    }
+    .cocktail-images {
+        width: 20rem;
+        display:flex;
+        flex-direction: column;
+    }
+    .index-page-layout {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .recipe-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .recipes {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+/*---------------------large screen rules--------------*/
+@media screen and (min-width: 701px) {
+    #banner {
+        margin-left: 20vw;
+        margin-right: 50vw;
+    }
+}
